@@ -1,0 +1,51 @@
+[
+    {
+      "type": 3,
+      "title": "bookstack-public",
+      "description": "Tweak of Nashosted and Selfhosted's Bookstack portainer Template to add APP_URL .env - Boostack is a free and open source Wiki designed for creating beautiful documentation. Feautring a simple, but powerful WYSIWYG editor it allows for teams to create detailed and useful documentation with ease.",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/bookstack2.png",
+      "categories": [
+        "Wiki"
+      ],
+      "note": "Default login is admin@admin.com with a password of password. The database created is called bookstackapp and the database user is called bookstack",
+      "platform": "linux",
+      "repository": {
+        "url": "https://github.com/SelfhostedPro/selfhosted_templates",
+        "stackfile": "Template/Stack/bookstack.yml"
+      },
+      "env": [
+        {
+          "name": "PUID",
+          "label": "PUID",
+          "default": "1000",
+          "preset": true
+        },
+        {
+          "name": "PGID",
+          "label": "PGID",
+          "default": "100",
+          "preset": true
+        },
+        {
+          "name": "TZ",
+          "label": "TZ"
+        },
+        {
+          "name": "DATABASE_PASSWORD",
+          "label": "DATABASE_PASSWORD"
+        },
+        {
+          "name": "MYSQL_ROOT_PASSWORD",
+          "label": "MYSQL_ROOT_PASSWORD"
+        },
+        {
+          "name": "PORT",
+          "label": "PORT"
+        },
+        {
+            "name": "APP_URL",
+            "label": "PORT"
+          }
+      ]
+    }
+  ]
